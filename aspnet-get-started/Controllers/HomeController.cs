@@ -10,11 +10,14 @@ namespace aspnet_get_started.Controllers
     {
         public ActionResult Index()
         {
+            System.Diagnostics.Trace.TraceError("Index() hitted");
             return View();
         }
 
         public ActionResult About()
         {
+            System.Diagnostics.Trace.TraceError("About() hitted");
+            
             ViewBag.Message = "Your application description page.";
 
             return View();
@@ -22,6 +25,8 @@ namespace aspnet_get_started.Controllers
 
         public ActionResult Contact()
         {
+            System.Diagnostics.Trace.TraceError("Contact() hitted");
+        
             ViewBag.Message = "Your contact page.";
 
             return View();
